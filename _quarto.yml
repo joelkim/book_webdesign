@@ -2,6 +2,9 @@ project:
   type: website
   render:
     - "*.ipynb"
+  resources:
+      - html/*.html
+      - html/*.css
 
 format:
   html:
@@ -56,6 +59,9 @@ website:
     search: true
     contents:
       - "index.ipynb"
+      - section: "CSS"
+        contents:
+        - "css_basic.ipynb"
       - section: "부록"
         contents:
         - "reference.ipynb"
